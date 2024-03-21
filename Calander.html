@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monthly Calendar</title>
+  <link rel="stylesheet" href="Calnder.css">
+</head>
+<body>
+  <div id="calendar">
+    <div id="header">
+      <div id="monthDisplay"></div>
+      <div>
+        <button id="prevMonth">&lt;</button>
+        <button id="nextMonth">&gt;</button>
+        <button id="currentMonth">Today</button>
+      </div>
+    </div>
+    <table id="monthView">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody"></tbody>
+    </table>
+  </div>
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="eventDate"></h2>
+      <ul id="eventList"></ul>
+      <label for="startTime">Start Time:</label>
+      <input type="time" id="startTime" name="startTime">
+      <label for="endTime">End Time:</label>
+      <input type="time" id="endTime" name="endTime">
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea>
+      <button id="addEvent">OK</button>
+    </div>
+  </div>
+  <script src="Calnder.js"></script>
+</body>
+</html>
